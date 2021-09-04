@@ -1,0 +1,1 @@
+export const webcolor = '#3195AD';

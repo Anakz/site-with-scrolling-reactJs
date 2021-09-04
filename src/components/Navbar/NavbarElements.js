@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
+import { webcolor } from '../webcolor'
 
 export const Nav = styled.nav`  
     background: #000;
     height: 80px;
-    // margin-top: -80px;
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,8 @@ export const NavContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`  
-    color: ${({webcolor}) => (webcolor)};
+    // color: ${({webcolor}) => (webcolor)};
+    color: ${webcolor};
     jusytify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem; //24px
@@ -83,7 +85,8 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &:hover{
-        color: ${({webcolor}) => (webcolor)};
+        // color: ${({webcolor}) => (webcolor)};
+        color: ${webcolor};
         transition: all 0.2s ease-in-out;
     }
 
@@ -103,7 +106,8 @@ export const NavBtn = styled.div`
 
 export const NavBtnLink = styled(LinkR)`  
     border-radius: 50px;
-    background: ${({webcolor}) => (webcolor)};
+    // background: ${({webcolor}) => (webcolor)};
+    background: ${webcolor};
     white-space: nowrap;
     padding: 10px 22px;
     color: #010606;

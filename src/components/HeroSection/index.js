@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Video from '../../videos/Video.mp4'
+import { Button } from "../ButtonElements";
+
 import {HeroContainer,
         HeroBg,
         VideoBg,
@@ -11,7 +13,11 @@ import {HeroContainer,
         ArrowRight} from './HeroElements'
 
 const HeroSection = () => {
-    const webcolor = '#3195AD';
+    const [hover, setHover] = useState(false)
+
+    const onHover = () =>{
+        setHover(!hover)
+    }
     return (
         <>
             <HeroContainer>
@@ -20,16 +26,16 @@ const HeroSection = () => {
                 </HeroBg>
                 
                 <HeroContent>
-                    <HeroH1 webcolor={webcolor}>Laborum do magna voluptate</HeroH1>
-                    <HeroP webcolor={webcolor}>
+                    <HeroH1>Laborum do magna voluptate</HeroH1>
+                    <HeroP>
                         Tempor sit qui aute culpa aute adipisicing sint eu.
                         Incididunt deserunt voluptate occaecat aliqua aliquip.
                     </HeroP>
 
                     <HeroBtnWrapper>
-                        <button>
-                            Get Started {/* {hover ? <ArrowForward/> : <ArrowRight/>} */}
-                        </button>
+                        <Button primary="true" dark='true' onMouseEnter={onHover} onMouseLeave={onHover}>
+                            Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
+                        </Button>
                     </HeroBtnWrapper>
                 </HeroContent>
             </HeroContainer>
