@@ -9,24 +9,24 @@ import {SidebarContainer,
         SidebarRoute} from './SidebarElements'
 
 const Sidebar = ({toggle, isOpen}) => {
-    const webcolor = '#3195AD';
+    
     return (
         <>
             <SidebarContainer isOpen={isOpen}>
                 <Icon>
-                    <CloseIcon onClick={toggle} webcolor={webcolor} />
+                    <CloseIcon onClick={toggle} />
                 </Icon>
 
                 <SidebarWrapper>
                     <SidebarMenu>
-                        <SidebarLink onClick={toggle} webcolor={webcolor} to="about">About</SidebarLink>
-                        <SidebarLink onClick={toggle} webcolor={webcolor} to="discover">Discover</SidebarLink>
-                        <SidebarLink onClick={toggle} webcolor={webcolor} to="services">Services</SidebarLink>
-                        <SidebarLink onClick={toggle} webcolor={webcolor} to="signup">Sing Up</SidebarLink>
+                        <SidebarLink onClick={toggle} to="about">About</SidebarLink>
+                        <SidebarLink onClick={toggle} to="discover">Discover</SidebarLink>
+                        <SidebarLink onClick={toggle} to="services">Services</SidebarLink>
+                        <SidebarLink onClick={toggle} to="signup">Sing Up</SidebarLink>
                     </SidebarMenu>
 
                     <SideBtnWrap>
-                        <SidebarRoute webcolor={webcolor} to="/signin">Sign In</SidebarRoute>
+                        <SidebarRoute to="/signin">Sign In</SidebarRoute>
                     </SideBtnWrap>
                 </SidebarWrapper>
             </SidebarContainer>

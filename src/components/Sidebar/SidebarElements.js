@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from 'react-scroll'
+import {webcolor} from '../webcolor'
 
 export const SidebarContainer = styled.aside`   
     position: fixed;
@@ -32,8 +33,10 @@ export const CloseIcon = styled(FaTimes)`
     color: #fff;
 
     &:hover{
-        color: ${({webcolor}) => (webcolor)};
+        // color: ${({webcolor}) => (webcolor)};
+        color: ${webcolor};
         transition: all 0.2s ease-in-out;
+        transform: scale(1.1);
     }
 `;
 
@@ -64,8 +67,10 @@ export const SidebarLink = styled(LinkS)`
     cursor: pointer;
 
     &:hover{
-        color: ${({webcolor}) => (webcolor)};
+        // color: ${({webcolor}) => (webcolor)};
         transition: 0.2s ease-in-out;
+        color: ${webcolor};
+        transform: scale(1.08);
     }
 `;
 
@@ -76,7 +81,9 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`   
     border-radius: 50px;
-    background: ${({webcolor}) => (webcolor)};
+    // background: ${({webcolor}) => (webcolor)};
+    background: ${webcolor};
+    transform: scale(1.08);
     white-space: nowrap;
     padding: 16px 64px;
     color: #010606;
@@ -91,5 +98,7 @@ export const SidebarRoute = styled(LinkR)`
         background: #fff;
         color: #000;
         transition: 0.2s ease-in-out;
+        // color: ${webcolor};
+        transform: scale(1.12);
     }
 `;

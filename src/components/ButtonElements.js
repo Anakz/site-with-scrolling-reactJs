@@ -19,5 +19,6 @@ export const Button = styled.button`
     &:hover{
         transition : all 0.2s ease-in-out;
         background: ${({primary}) => ( primary ? '#fff' : webcolor )};
+        transform: scale(1.05);
     }
 `;

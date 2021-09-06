@@ -81,7 +81,8 @@ export const HeroP = styled.p`
     margin-top: 24px;
     // color: ${({ webcolor }) => (webcolor)};
     // color: ${webcolor};
-    text-shadow: 2px 2px 5px grey;
+    color: #797979;
+    text-shadow: 1px 1px 0px white;
     text-align: center;
     max-width: 600px;
     font-size: 32px;

@@ -44,6 +44,11 @@ export const NavLogo = styled(LinkR)`
     text-decoration: none;
 `;
 
+export const NavLogoImg = styled.img`
+    width: 90px;
+    height: 40px;
+`;
+
 export const MobileIcon = styled.div`  
     display: none;
 
@@ -88,6 +93,7 @@ export const NavLinks = styled(LinkS)`
         // color: ${({webcolor}) => (webcolor)};
         color: ${webcolor};
         transition: all 0.2s ease-in-out;
+        transform: scale(1.1);
     }
 
     &.active{
@@ -122,5 +128,6 @@ export const NavBtnLink = styled(LinkR)`
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
+        transform: scale(1.05);
     }
 `;

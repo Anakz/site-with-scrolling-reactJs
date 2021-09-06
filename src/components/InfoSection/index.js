@@ -8,25 +8,58 @@ import {InfoContainer,
         TopLine,
         Heading,
         Subtitle,
-        BtnWrap} from './InfoElements'
+        BtnWrap,
+        Column2,
+        ImgWrap,
+        Img} from './InfoElements'
 
-const InfoSection = () => {
+const InfoSection = ({  id,
+                        lightBg,
+                        lightText,
+                        topLine,
+                        headLine,
+                        description,
+                        buttonLabel,
+                        imgStart,
+                        img,
+                        alt,
+                        dark,
+                        primary,
+                        darkText}) => {
+
     return (
         <>
-            <InfoContainer>
+            <InfoContainer id={id} lightBg={lightBg} >
                 <InfoWrapper>
-                    <InfoRow>
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <TopLine>TopLine</TopLine>
-                                <Heading>Heading</Heading>
-                                <Subtitle>Substitle</Subtitle>
+                                <TopLine>{topLine}</TopLine>
+                                <Heading lightText={lightText}>{headLine}</Heading>
+                                <Subtitle darkText={darkText}>{description}</Subtitle>
 
                                 <BtnWrap>
-                                    <Button>Button</Button>
+                                    <Button 
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80}
+                                        
+                                        primary={primary} 
+                                        dark={dark}
+                                    >
+                                        {buttonLabel}
+                                    </Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
+
+                        <Column2>
+                            <ImgWrap>
+                                <Img src={img} alt={alt} />
+                            </ImgWrap>
+                        </Column2>
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>
