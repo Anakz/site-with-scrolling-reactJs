@@ -27,7 +27,7 @@ export const homeObjTwo = {
     topLine: 'Solve Problem Bank',
     headLine: 'Lorem ipsum dolor sit amet',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero atque id ut placeat quas rem voluptatibus fuga sapiente culpa nobis',
-    buttonLabel: "Let's begging",
+    buttonLabel: "Let's Begging",
     imgStart: true,
     img: img2,
     alt: 'Accounting',
@@ -36,19 +36,35 @@ export const homeObjTwo = {
     darkText: true
 }
 
+// export const homeObjThree = {
+//     id: 'signup',
+//     lightBg: false,
+//     lightText: true,
+//     lightTextDescr: true,
+//     topLine: 'Checking Bank',
+//     headLine: 'Lorem ipsum dolor sit amet',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero atque id ut placeat quas rem voluptatibus fuga sapiente culpa nobis',
+//     buttonLabel: 'Checkout Now',
+//     imgStart: false,
+//     img: img3,
+//     alt: 'Checking',
+//     dark: true,
+//     primary: true,
+//     darkText: false
+// }
 export const homeObjThree = {
-    id: 'services',
-    lightBg: false,
-    lightText: true,
-    lightTextDescr: true,
+    id: 'signup',
+    lightBg: true,
+    lightText: false,
+    lightTextDescr: false,
     topLine: 'Checking Bank',
     headLine: 'Lorem ipsum dolor sit amet',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero atque id ut placeat quas rem voluptatibus fuga sapiente culpa nobis',
-    buttonLabel: 'Get Started',
-    imgStart: false,
+    buttonLabel: "Checkout Now",
+    imgStart: true,
     img: img3,
     alt: 'Checking',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 }
