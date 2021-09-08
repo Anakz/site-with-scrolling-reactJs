@@ -4,7 +4,7 @@ import {Link as LinkS} from 'react-scroll'
 import { webcolor } from '../webcolor'
 
 export const Nav = styled.nav`  
-    background: #000;
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -97,7 +97,7 @@ export const NavLinks = styled(LinkS)`
     }
 
     &.active{
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid ${webcolor};
     }
 `;
 

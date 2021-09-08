@@ -19,10 +19,10 @@ const Sidebar = ({toggle, isOpen}) => {
 
                 <SidebarWrapper>
                     <SidebarMenu>
-                        <SidebarLink onClick={toggle} to="about">About</SidebarLink>
-                        <SidebarLink onClick={toggle} to="discover">Discover</SidebarLink>
-                        <SidebarLink onClick={toggle} to="services">Services</SidebarLink>
-                        <SidebarLink onClick={toggle} to="signup">Sing Up</SidebarLink>
+                        <SidebarLink onClick={toggle} to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80} >About</SidebarLink>
+                        <SidebarLink onClick={toggle} to="discover" smooth={true} duration={500} spy={true} exact='true' offset={-80} >Discover</SidebarLink>
+                        <SidebarLink onClick={toggle} to="services" smooth={true} duration={500} spy={true} exact='true' offset={-80} >Services</SidebarLink>
+                        <SidebarLink onClick={toggle} to="signup" smooth={true} duration={500} spy={true} exact='true' offset={-80} >Sing Up</SidebarLink>
                     </SidebarMenu>
 
                     <SideBtnWrap>

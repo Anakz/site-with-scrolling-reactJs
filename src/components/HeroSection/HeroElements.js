@@ -38,8 +38,17 @@ export const HeroBg = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    height: 753px;
     overflow: hidden;
+
+    
+    @media screen and (max-width: 768px){
+        height: 743px;
+    }
+    @media screen and (min-width: 1580px){
+        height: 789px;
+    }
 `;
 
 export const VideoBg = styled.video`
