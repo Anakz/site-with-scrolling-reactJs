@@ -40,6 +40,7 @@ const InfoSection = ({  id,
 
                                 <BtnWrap>
                                     <Button 
+                                        to='home'
                                         smooth={true}
                                         duration={500}
                                         spy={true}
@@ -49,7 +50,7 @@ const InfoSection = ({  id,
                                         primary={primary} 
                                         dark={dark}
                                     >
-                                        {buttonLabel}lala
+                                        {buttonLabel}
                                     </Button>
                                 </BtnWrap>
                             </TextWrapper>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import {webcolor} from '../components/webcolor'
 
-export const Button = styled.button`
+export const Button = styled(Link)`
     border-radius: 50px;
     background: ${({primary}) => ( primary ? webcolor : '#010606' )};
     white-space: nowrap;
