@@ -2,11 +2,11 @@ import React from 'react'
 import ScrollToTop from '../components/ScrollToTop'
 import Signin from '../components/Signin'
 
-const SignInPage = () => {
+const SignInPage = ({idUser, isUser}) => {
     return (
         <>
           <ScrollToTop />
-          <Signin />  
+          <Signin idUser={idUser} isUser={isUser} />  
         </>
     )
 }

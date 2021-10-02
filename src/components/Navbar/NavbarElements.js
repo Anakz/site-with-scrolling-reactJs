@@ -101,6 +101,27 @@ export const NavLinks = styled(LinkS)`
     }
 `;
 
+export const NavBLinks = styled(LinkR)`  
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover{
+        // color: ${({webcolor}) => (webcolor)};
+        color: ${webcolor};
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.1);
+    }
+
+    &.active{
+        border-bottom: 3px solid ${webcolor};
+    }
+`;
+
 export const NavBtn = styled.div`  
     display: flex;
     align-items: center;

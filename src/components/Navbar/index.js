@@ -11,11 +11,12 @@ import {Nav,
         NavLinks,
         NavBtn,
         NavBtnLink,
-        NavLogoImg} from './NavbarElements'
+        NavLogoImg,
+        NavBLinks} from './NavbarElements'
 
 
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle, idUser, isAdmin}) => {
     
     const [scrollNav, setScrollNav] = useState(false)
 
@@ -61,10 +62,16 @@ const Navbar = ({toggle}) => {
                         <NavItem>
                             <NavLinks to="signup" smooth={true} duration={500} spy={true} exact='true' offset={-80} >Sign Up</NavLinks>
                         </NavItem>
+
+                        {isAdmin ? 
+                            <NavItem>
+                                <NavBLinks to="allusers" >All users</NavBLinks>
+                            </NavItem> 
+                        : ''}
                     </NavMenu>
 
                     <NavBtn>
-                        <NavBtnLink to="/signin" >Sign In</NavBtnLink>
+                        {(idUser === -999) ? <NavBtnLink to="/signin" >Sign In</NavBtnLink> : <NavBtnLink to="/signout" >Sign out</NavBtnLink>}
                     </NavBtn>
 
                 </NavContainer>

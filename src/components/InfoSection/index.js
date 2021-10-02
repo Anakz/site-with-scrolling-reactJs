@@ -47,8 +47,8 @@ const InfoSection = ({  id,
                                         exact="true"
                                         offset={-80}
                                         
-                                        primary={primary} 
-                                        dark={dark}
+                                        primary={primary.toString()} 
+                                        dark={dark.toString()}
                                     >
                                         {buttonLabel}
                                     </Button>
